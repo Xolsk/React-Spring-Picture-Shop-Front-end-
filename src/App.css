@@ -1,38 +1,176 @@
 .App {
   text-align: center;
+  display:flex;
+  height:50vh;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper{
+  background-color:rgb(233, 248, 233);
+  color:white;
+  display:flex;
+  width:100%;
+  height:100vh;
+  flex-direction:column;
+
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*{
+  margin:0;
+  padding:0;
+  box-sizing:content-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+label{
+  font-weight:bold;
+  color:#74ad5a;
+  display:block;
+
+
+}
+
+select{
+  background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+	background-color:#74ad5a;
+  color:white;
+  font-weight:bold;
+  font-size:1.2em;
+  width:100%;
+}
+
+input{
+
+  margin-bottom: 1em;
+  width:50%;
+  height:1.2em;
+  font-size:1em;
+}
+
+.shopMenu, .pictureDisplay{
+
+  width:50%;
+  display:flex;
+  background-color:#dbe2d8;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  flex-direction:column;
+  margin: 1rem 2rem 0 2rem;
+  box-shadow: 0px 3px 35px -8px rgba(0,0,0,0.49);
 }
 
-.App-link {
-  color: #61dafb;
+.visibleMenu{
+
+  width: 100%;
+  display:flex;
+  height:60vh;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+table{
+  border-spacing: 0;
+  text-align:center;
+  width: 100%;
+  background-color: #b2c2a9;
+  overflow:scroll;
+ 
+
 }
+
+th{
+  margin-bottom: 5px;
+  background-color:#74ad5a;
+
+}
+
+tr:nth-child(even){
+  background-color: #9eb991;
+}
+
+tr{
+
+  margin:5px;
+  font-weight:200;
+}
+
+.tableWrapper{
+  height:100%;
+  width:100%;
+}
+
+.formWrapper{
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  margin-top:1em;
+}
+
+.addShop, .addPicture{
+
+  background-color:#dbe2d8;
+  margin:1rem;
+  display:flex;
+  justify-content: space-between;
+  flex-direction:column;
+  box-shadow: -3px 21px 35px -8px rgba(0,0,0,0.49);
+
+}
+
+.shopSelect{
+
+width:100%;
+
+}
+
+.buttonWrapper{
+  display:flex;
+  width:100%;
+}
+
+.button {
+
+	background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+	background-color:#74ad5a;
+	display:inline-block;
+	cursor:pointer;
+  color:#ffffff;
+  width:100%;
+	font-family:Arial;
+	font-size:13px;
+  font-weight:bold;
+  padding:10px 0;
+  border-width: 0;
+	
+	text-decoration:none;
+}
+
+.split{
+  width:50% !important;
+
+}
+
+.infoWrapper{
+  background-color:#68a54b;
+  display:flex;
+  flex-direction:column;
+  padding:3em;
+}
+
+.strongWrapper{
+
+  padding:1em;
+}
+.erase{
+  background-color:rgb(224, 55, 55) !important;
+  background:none;
+}
+.button:hover {
+	background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
+	background-color:#68a54b;
+}
+
+.button:active {
+	position:relative;
+	top:1px;
+}
+
